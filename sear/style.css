@@ -8,15 +8,20 @@ body{
     background: #000;
     color: #E6D5B8;
 }
+.container{
+    position:relative;
+    margin : auto;
+    top:5vmin;
+    width: 80vmin;
+    height: 100vmin;
+}
 .search{
     width: 80vmin;
     background: #F0A500;
-    margin:20vmin auto 0;
     border-radius: 1vmin;
 }
 input{
-    position:relative;
-    left:70vmin;
+    position:absolute;
     height:5vmin;
     background: transparent;
     border:0;
@@ -29,7 +34,7 @@ input{
 }
 .place {
     position: relative;
-    width: 76vmin;
+    width: 80vmin;
     list-style:none;
     border-radius: 1vmin;
     padding: 1.5vmin 1vmin;
@@ -42,15 +47,14 @@ input{
 }
 #lis{
     height: 15vmin;
-    width:fit-content;
-    margin:auto;
+    width:80vmin;
     overflow-y:auto;
+    overflow-x: hidden;
 }
 #myPar{
     width: 78vmin;
     position: absolute;
-    left:70vmin;
-    top:47vmin;
+    top:30vmin;
     font-size: 5vmin;
     background: #E45826;
     border-radius: 1vmin;
@@ -62,5 +66,10 @@ input{
     width: 75vmin;
     font-weight: bolder;
     font-size: 3vmin;
+}
+#searchResults{
+    position:absolute;
+    top:5vmin;
+    width: 80vmin;
 }
 
